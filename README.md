@@ -10,4 +10,12 @@
 # Écrire des scénarios avec Cucumber:
 - Cucumber permet de rédiger des scénarios en suivant un formalisme appelé le langage ***Gherkin***. 
 - Les scénarios sont regroupés par fonctionnalité (***feature***). Ils sont écrits dans un simple fichier texte. Par défaut, Cucumber s’attend à ce que le fichier porte l’extension ***.feature***.
-- Imaginons que nous voulions tester le jeu du pendu (the hangman en anglais). Nous pourrions écrire les scénarios suivant dans le fichier PlayHagman.feature :
+- Imaginons que nous voulions tester le *********************. Nous pourrions écrire les scénarios suivant dans le fichier PlayHagman.feature :
+```
+Feature: Update password
+Scenario: Admin user can update the user password
+Given I am in the HR system with an Admin account
+When I update password of another user
+Then I receive a message for updating password successfully
+And user password is updated to the new password
+```
