@@ -2,6 +2,7 @@
 - Cucumber est un framework pour l’implémentation de scénarios de type BDD (Behavior-Driven-Development).
 - Cucumber est un cadre de test qui prend en charge le développement axé sur le comportement (BDD).
 - Cucumber lui-même est écrit en Ruby, mais il peut être utilisé pour « tester » le code écrit en Ruby ou d’autres langages, y compris, mais sans s’y limiter, Java, C # et Python.
+- Cucumber aide à améliorer la communication
 - Cucumber utilise un ***anglais simple*** au format ***Gherkin*** pour exprimer les histoires d’utilisateurs.
 - On peut récupérer les script Gherkin via l'api RestAssured
 - Cucumber est totalement compatible avec l'outil open source Squash, qui permet de scripter le test en français également.
