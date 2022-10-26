@@ -50,3 +50,4 @@ Scenario: Successful LogOut
 	Then Message displayed LogOut Successfully
 ```
 # Executer le fichier ***LogIn_Test.feature*** :
+<img src="https://user-images.githubusercontent.com/7100940/198074787-c81ab22f-1d2d-43b5-9fee-c4c404b6a564.png">
