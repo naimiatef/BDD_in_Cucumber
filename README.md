@@ -12,6 +12,14 @@
     -  Le ***Given*** mot-clé précède le texte définissant le contexte; l'état connu du système (ou condition préalable).
     -  Le ***When*** mot-clé précède le texte définissant une action.
     -  Le ***Then*** mot-clé précède le texte définissant le résultat de l'action sur le contexte (ou résultat attendu).
+# Ajouter la dependence Cucumber dans le fichier pom.xml:
+```  <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-java -->
+<dependency>
+    <groupId>io.cucumber</groupId>
+    <artifactId>cucumber-java</artifactId>
+    <version>7.8.1</version>
+</dependen
+```	
 # Écrire des scénarios avec Cucumber:
 - Cucumber permet de rédiger des scénarios en suivant un formalisme appelé le langage ***Gherkin***. 
 - Les scénarios sont regroupés par fonctionnalité (***feature***). Ils sont écrits dans un simple fichier texte. Par défaut, Cucumber s’attend à ce que le fichier porte l’extension ***.feature***.
