@@ -15,12 +15,29 @@
 # Écrire des scénarios avec Cucumber:
 - Cucumber permet de rédiger des scénarios en suivant un formalisme appelé le langage ***Gherkin***. 
 - Les scénarios sont regroupés par fonctionnalité (***feature***). Ils sont écrits dans un simple fichier texte. Par défaut, Cucumber s’attend à ce que le fichier porte l’extension ***.feature***.
-- Imaginons que nous voulions tester le *********************. Nous pourrions écrire les scénarios suivant dans le fichier PlayHagman.feature :
+- Imaginons que nous voulions tester le cas de test suivant:
 ```
-Feature: Update password
-Scenario: Admin user can update the user password
-Given I am in the HR system with an Admin account
-When I update password of another user
-Then I receive a message for updating password successfully
-And user password is updated to the new password
+ 	- Lancez le navigateur
+	- Accédez à la page d’accueil
+	- Cliquez sur le lien de connexion
+	- Entrez le nom d’utilisateur et le mot de passe
+	- Cliquez sur le bouton Soumettre
+	- Imprimer un message réussi
+	- Déconnexion de l’application
+	- Imprimer un message réussi
+	- Fermez le navigateur
+```
+-   Nous pourrions écrire les scénarios suivant dans le fichier ***LogIn_Test.feature*** :
+```
+Feature: Login Action
+
+Scenario: Successful Login with Valid Credentials
+	Given User is on Home Page
+	When User Navigate to LogIn Page
+	And User enters UserName and Password
+	Then Message displayed Login Successfully
+
+Scenario: Successful LogOut
+	When User LogOut from the Application
+	Then Message displayed LogOut Successfully
 ```
