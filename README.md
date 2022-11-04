@@ -37,17 +37,11 @@
 ```
 -   Nous pourrions écrire les scénarios suivant dans le fichier ***LogIn_Test.feature*** :
 ```
-Feature: Login Action
-
-Scenario: Successful Login with Valid Credentials
-	Given User is on Home Page
-	When User Navigate to LogIn Page
-	And User enters UserName and Password
-	Then Message displayed Login Successfully
-
-Scenario: Successful LogOut
-	When User LogOut from the Application
-	Then Message displayed LogOut Successfully
+Feature: Test The login functionality
+  Scenario: To login with valid email and valid password 
+   Given User open the website and go to login page
+   When User fill email as username and password and click on login
+   Then User should navigate to home page
 ```
 # Executer le fichier ***LogIn_Test.feature*** :
 <img src="https://user-images.githubusercontent.com/7100940/198074787-c81ab22f-1d2d-43b5-9fee-c4c404b6a564.png" with ="300" height="200">
